@@ -1,0 +1,326 @@
+@import "compass/css3";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans", sans-serif;
+}
+
+.hero-section {
+    background-image: url("hero-section-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    color: #fff !important;
+    font-weight: bold;
+    padding: 2% !important;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+    color: #fff !important;
+}
+
+.navbar-brand:hover {
+    color: #b2ac88 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.2rem !important;
+}
+
+.nav-link:hover {
+    color: #b2ac88 !important;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.login-btn {
+    align-items: center;
+    border: 0;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.5% 2%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #b2ac88;
+    color: #122013;
+    font-size: 1.2rem;
+    margin-left: 2%;
+}
+
+.login-btn:hover {
+    background-color: #fada5e;
+}
+
+.hero-content {
+    padding: 10% 10%;
+}
+
+.hero-h1 {
+    font-size: 3rem;
+    color: #fada5e;
+    margin-bottom: 3%;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 4%;
+    color: #808080;
+}
+
+.explore-more-btn {
+    align-items: center;
+    border: 0;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 40px;
+    padding: 1.5% 4%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fada5e;
+    border: none;
+    font-size: 1.2rem;
+    color: #122013;
+    font-weight: bold;
+}
+
+.explore-more-btn:hover {
+    background-color: #b2ac88;
+}
+
+.great-combo-heading {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #122013;
+}
+
+#combo-section {
+    padding: 4% 10% 10% 8%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10%;
+}
+
+.combo-section-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.combo-section-content p {
+    color: #607274;
+    font-size: 1.1rem;
+}
+
+.combo-section-content button {
+    border: 0;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 40px;
+    padding: 4% 10%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fada5e;
+    border: none;
+}
+
+.combo-section-content button:hover {
+    background-color: #b2ac88;
+}
+
+.countdown-section {
+    background-color: #808080;
+    align-items: center;
+    padding: 15%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cd-box {
+    background-color: #fada5e;
+    -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+
+div.cd-box {
+    width: 100px;
+    height: 100px;
+}
+
+#our-services {
+    background-color: #122013;
+    padding: 4% 7%;
+}
+
+.our-services-heading1 {
+    color: #fada5e;
+    text-align: center;
+}
+
+.our-services-content {
+    color: #808080;
+    width: 70%;
+    text-align: center;
+    margin: 3% auto;
+    font-size: 1.2rem;
+}
+
+.services {
+    padding: 0 7%;
+}
+
+.choose-us {
+    padding: 5% 7% 12% 7%;
+}
+
+.choose-us-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 35%;
+    grid-column-gap: 5%;
+}
+
+.pros-icon {
+    color: #fada5e;
+}
+
+.pros {
+    color: #607274;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+}
+
+#about-us {
+    padding: 4% 7%;
+    background-color: #122013;
+}
+
+.container6-aboutus {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+
+.team-member-name {
+    margin: 5% 0;
+    color: #fada5e;
+}
+
+.grid-item-team-member {
+    position: relative;
+    width: 100%;
+}
+
+.grid-item-team-member:hover::before {
+    transition: 0.5s linear all;
+}
+
+.grid-item-team-member img {
+    display: block;
+}
+
+.grid-item-team-member .image-hover-icons-team-social {
+    position: relative;
+    top: -6%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: 0.5s linear all;
+    opacity: 0;
+}
+
+.grid-item-team-member:hover .image-hover-icons-team-social {
+    opacity: 1;
+}
+
+.team-social-icons {
+    color: #122013;
+    margin: 0 2%;
+    padding: 7% 4%;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #808080;
+}
+
+.team-social-icons:hover {
+    background-color: #fada5e;
+}
+
+.member-img {
+    width: 90%;
+}
+
+.slide-form {
+    position: fixed;
+    left: 0;
+    width: 35%;
+    background-color: #b3b3b3;
+    padding: 5%;
+    box-sizing: border-box;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.user-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.user-form input:hover {
+    border: 2px solid #fada5e;
+}
+
+.user-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fada5e;
+    color: #122013;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
