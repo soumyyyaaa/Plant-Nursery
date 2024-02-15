@@ -73,6 +73,7 @@ body {
     font-size: 3rem;
     color: #fada5e;
     margin-bottom: 3%;
+    font-weight: bold;
 }
 
 .hero-text {
@@ -107,7 +108,8 @@ body {
     padding-top: 3%;
     text-align: center;
     font-size: 2.5rem;
-    color: #122013;
+    color: #122013 !important;
+    font-weight: bold;
 }
 
 #combo-section {
@@ -121,6 +123,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.combo-section-content img {
+    width: 45%;
 }
 
 .combo-section-content p {
@@ -146,32 +152,6 @@ body {
     background-color: #b2ac88;
 }
 
-.countdown-section {
-    background-color: #808080;
-    align-items: center;
-    padding: 15%;
-}
-
-.countdown {
-    display: flex;
-    justify-content: space-around;
-}
-
-.cd-box {
-    background-color: #fada5e;
-    -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-    -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-    box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-    align-items: center;
-    text-align: center;
-    padding: 2%;
-}
-
-div.cd-box {
-    width: 100px;
-    height: 100px;
-}
-
 #our-services {
     background-color: #122013;
     padding: 4% 7%;
@@ -180,6 +160,7 @@ div.cd-box {
 .our-services-heading1 {
     color: #fada5e;
     text-align: center;
+    font-weight: bold;
 }
 
 .our-services-content {
@@ -192,6 +173,10 @@ div.cd-box {
 
 .services {
     padding: 0 7%;
+}
+
+.carousel-item img {
+    opacity: 0.7;
 }
 
 .choose-us {
@@ -227,13 +212,15 @@ div.cd-box {
 
 .container6-aboutus {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 21% 21% 21% 21%;
     text-align: center;
+    align-items: center;
+    grid-column-gap: 5%;
 }
 
 .team-member-name {
-    margin: 5% 0;
     color: #fada5e;
+    font-size: 1.3rem;
 }
 
 .grid-item-team-member {
@@ -251,12 +238,11 @@ div.cd-box {
 
 .grid-item-team-member .image-hover-icons-team-social {
     position: relative;
-    top: -6%;
-    left: 40%;
+    top: -20px;
+    left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transition: 0.5s linear all;
-    opacity: 0;
 }
 
 .grid-item-team-member:hover .image-hover-icons-team-social {
@@ -277,17 +263,21 @@ div.cd-box {
 }
 
 .member-img {
-    width: 90%;
+    width: 100%;
 }
 
 .slide-form {
     position: fixed;
-    left: 0;
-    width: 35%;
-    background-color: #b3b3b3;
-    padding: 5%;
+    left: 2%;
+    border-radius: 20px;
+    width: 30%;
+    background-image: url("popup.png");
+    background-position: center;
+    background-size: cover;
+    padding: 5% 3%;
     box-sizing: border-box;
     transition: bottom 0.5s ease-in-out;
+    z-index: 1;
 }
 
 .hidden {
@@ -296,9 +286,10 @@ div.cd-box {
 
 .user-form input {
     display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 1%;
     box-sizing: border-box;
 }
 
@@ -312,6 +303,7 @@ div.cd-box {
     background-color: #fada5e;
     color: #122013;
     border: none;
+    margin-top: 4%;
     cursor: pointer;
 }
 
@@ -323,4 +315,267 @@ div.cd-box {
     background: none;
     font-size: 20px;
     cursor: pointer;
+    color: #fada5e;
+    font-weight: bold;
+}
+
+.countdown-section {
+    align-items: center;
+    padding: 5% 35%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cd-box {
+    background-color: #fada5e;
+    -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    align-items: center;
+    text-align: center;
+    padding: 6% 4%;
+    color: #607274;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div.cd-box {
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        background-image: url("phone-hero.png");
+        height: auto;
+    }
+
+    .login-btn {
+        padding: 2% 10%;
+        margin-left: 0;
+        margin-top: 7%;
+    }
+
+    .hero-content {
+        padding: 15% 8% 18% 8%;
+    }
+
+    .hero-h1 {
+        font-size: 2rem;
+        margin-bottom: 7%;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+        margin-bottom: 15%;
+        text-align: center;
+        color: #c7c8cc;
+    }
+
+    .explore-more-btn {
+        padding: 3% 10%;
+        margin: 0 20%;
+    }
+
+    .explore-more-btn:hover {
+        background-color: #b2ac88;
+    }
+
+    .great-combo-heading {
+        padding-top: 10%;
+        font-size: 2rem;
+    }
+
+    #combo-section {
+        padding: 8% 8% 6% 8%;
+        display: block;
+    }
+
+    .combo-section-content {
+        display: block;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+
+    .combo-section-content img {
+        width: 60%;
+    }
+
+    .combo-section-content h3 {
+        margin-top: 5%;
+        font-size: 1.5rem;
+        color: #607274;
+    }
+
+    .combo-section-content p {
+        color: #607274;
+        font-size: 1rem;
+    }
+
+    .combo-section-content button {
+        padding: 2% 10%;
+        font-size: 1rem;
+    }
+
+    .combo-section-content button:hover {
+        background-color: #b2ac88;
+    }
+
+    #our-services {
+        padding: 10% 8%;
+    }
+
+    .our-services-heading1 {
+        font-size: 2rem;
+    }
+
+    .our-services-content {
+        width: 100%;
+        text-align: justify;
+        margin: 7% 0 10%;
+        font-size: 1.2rem;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .carousel-item img {
+        opacity: 0.5;
+    }
+
+    .carousel-caption {
+        font-size: 0.7rem !important;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 0 !important;
+    }
+
+    .choose-us {
+        padding: 10% 8%;
+    }
+
+    .choose-us-content {
+        display: block;
+        margin-top: 10%;
+    }
+
+    .pros-icon {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .pros {
+        padding: 5% 5% 2% 5%;
+        display: block;
+        text-align: center;
+        margin: 10%;
+    }
+
+    .pros h5 {
+        font-size: 1.1rem;
+    }
+
+    .pros p {
+        font-size: 0.9rem;
+    }
+
+    #about-us {
+        padding: 10% 8%;
+    }
+
+    .container6-aboutus {
+        display: block;
+        margin-top: 10%;
+    }
+
+    .team-member-name {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    .grid-item-team-member {
+        margin-bottom: 10%;
+    }
+
+    .grid-item-team-member img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .grid-item-team-member .image-hover-icons-team-social {
+        position: relative;
+        top: -25px;
+        left: 45.5%;
+    }
+
+    .grid-item-team-member:hover .image-hover-icons-team-social {
+        opacity: 1;
+    }
+
+    .team-social-icons {
+        padding: 4% 2%;
+    }
+
+    .slide-form {
+        left: 3%;
+        width: 80%;
+        padding: 8% 5%;
+    }
+
+    .slide-form h2 {
+        font-size: 1.4rem;
+    }
+
+    .slide-form p {
+        font-size: 1rem;
+    }
+
+    .user-form button {
+        font-size: 1rem;
+    }
+
+    .countdown-section {
+        align-items: center;
+        padding: 5% 35%;
+    }
+
+    .countdown {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cd-box {
+        background-color: #fada5e;
+        -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+        -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+        box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+        align-items: center;
+        text-align: center;
+        padding: 6% 4%;
+        color: #607274;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    div.cd-box {
+        width: 100px;
+        height: 100px;
+    }
 }

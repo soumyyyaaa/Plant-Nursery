@@ -32,10 +32,6 @@ function run_clock(m, s, endtime) {
 }
 run_clock("minutes", "seconds", deadline);
 
-/* setTimeout(function () {
-    document.getElementById("contactForm").classList.add("show");
-}, 15000);
- */
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.getElementById("slideForm").classList.remove("hidden");
