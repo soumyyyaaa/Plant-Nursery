@@ -1,4 +1,3 @@
-@import "compass/css3";
 body {
     margin: 0;
     padding: 0;
@@ -79,7 +78,7 @@ body {
 .hero-text {
     font-size: 1.5rem;
     margin-bottom: 4%;
-    color: #808080;
+    color: #c7c8cc;
 }
 
 .explore-more-btn {
@@ -120,13 +119,14 @@ body {
 }
 
 .combo-section-content {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
+    grid-column-gap: 5%;
 }
 
 .combo-section-content img {
-    width: 45%;
+    width: 100%;
 }
 
 .combo-section-content p {
@@ -164,7 +164,7 @@ body {
 }
 
 .our-services-content {
-    color: #808080;
+    color: #c7c8cc;
     width: 70%;
     text-align: center;
     margin: 3% auto;
@@ -255,7 +255,7 @@ body {
     padding: 7% 4%;
     cursor: pointer;
     font-weight: bold;
-    background-color: #808080;
+    background-color: #c7c8cc;
 }
 
 .team-social-icons:hover {
@@ -350,7 +350,156 @@ div.cd-box {
     height: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+/*--------------------TABLET-----------------------*/
+@media only screen and (max-width: 1200px) {
+    .hero-section {
+        height: auto;
+    }
+
+    .login-btn {
+        padding: 2% 7%;
+        margin-left: 0;
+        margin-top: 3%;
+    }
+
+    .hero-content {
+        padding: 8% 10% 12% 10%;
+    }
+
+    .hero-h1 {
+        font-size: 2.5rem;
+        margin-bottom: 4%;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+        margin-bottom: 7%;
+        color: #c7c8cc;
+    }
+
+    .explore-more-btn {
+        padding: 2% 5%;
+    }
+
+    .great-combo-heading {
+        padding-top: 8%;
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+
+    #combo-section {
+        padding: 4% 10% 33% 10%;
+        grid-template-columns: auto;
+        grid-row-gap: 5%;
+    }
+
+    .combo-section-content {
+        grid-template-columns: 46.5% 46.5%;
+        grid-column-gap: 7%;
+    }
+
+    .combo-section-content img {
+        width: 100%;
+    }
+
+    .combo-section-content p {
+        font-size: 1.2rem;
+    }
+
+    .combo-section-content button {
+        padding: 5% 12%;
+    }
+
+    #our-services {
+        padding: 8% 10%;
+    }
+
+    .our-services-content {
+        width: 100%;
+        margin: 5% auto;
+        text-align: justify;
+    }
+
+    .services {
+        padding: 2% 0;
+    }
+
+    .carousel-item img {
+        opacity: 0.6;
+    }
+
+    .choose-us {
+        padding: 8% 10% 25% 10%;
+    }
+
+    .choose-us-content {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 15%;
+    }
+
+    .pros-icon {
+        margin-right: 5%;
+    }
+
+    .pros {
+        padding: 6% 4%;
+    }
+
+    #about-us {
+        padding: 8% 10% 14% 10%;
+    }
+
+    .container6-aboutus {
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        margin-top: 10%;
+        grid-row-gap: 5%;
+    }
+
+    .team-member-name {
+        font-size: 1.2rem;
+    }
+
+    .slide-form {
+        width: 48%;
+        padding: 5%;
+    }
+
+    .countdown-section {
+        align-items: center;
+        padding: 5% 35%;
+    }
+
+    .countdown {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cd-box {
+        background-color: #fada5e;
+        -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+        -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+        box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+        align-items: center;
+        text-align: center;
+        padding: 6% 4%;
+        color: #607274;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    div.cd-box {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*--------------------PHONE-----------------------*/
+@media only screen and (max-width: 480px) {
     .hero-section {
         background-image: url("phone-hero.png");
         height: auto;
