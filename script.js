@@ -1,4 +1,4 @@
-var time_in_minutes = 10;
+/* var time_in_minutes = 10;
 var current_time = Date.parse(new Date());
 var deadline = new Date(current_time + time_in_minutes * 60 * 1000);
 
@@ -31,7 +31,7 @@ function run_clock(m, s, endtime) {
     var timeinterval = setInterval(update_clock, 1000);
 }
 run_clock("minutes", "seconds", deadline);
-
+ */
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.getElementById("slideForm").classList.remove("hidden");
@@ -45,3 +45,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500);
     });
 });
+
+const countdownTime = 10 * 60 * 1000; // 10 minutes
+const timerElementMinute = document.getElementById("minutes");
+const timerElementSecond = document.getElementById("seconds");
+function updateTimerDisplay(remainingTime) {
+    const minutes = Math.floor(remainingTime / 60000);
+    const seconds = Math.floor((remainingTime % 60000) / 1000);
+    timerElementMinute.textContent = minutes;
+    timerElementSecond.textContent = seconds;
+}
+function startCountdown() {
+    let startTime = Date.now();
+    function update() {
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = countdownTime - elapsedTime;
+
+        if (remainingTime <= 0) {
+            clearInterval(timerInterval);
+            // Here you can add additional actions when the countdown ends
+            return;
+        }
+
+        updateTimerDisplay(remainingTime);
+    }
+
+    update();
+    const timerInterval = setInterval(update, 1000);
+}
+startCountdown();

@@ -172,7 +172,7 @@ body {
 }
 
 .services {
-    padding: 0 7%;
+    padding: 0 3%;
 }
 
 .carousel-item img {
@@ -321,24 +321,39 @@ body {
 
 .countdown-section {
     align-items: center;
-    padding: 5% 35%;
+    padding: 4% 7%;
+}
+
+.countdown-section h1 {
+    text-align: center;
+    margin-bottom: 2%;
+    color: #122013;
+    font-weight: bold;
+}
+
+.countdown-section p {
+    color: #fada5e;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .countdown {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    margin: 3% 40% 0 40%;
+    grid-template-columns: auto auto auto;
     align-items: center;
+    text-align: center;
 }
 
 .cd-box {
-    background-color: #fada5e;
+    background-color: #122013;
     -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
     -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
     box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
     align-items: center;
     text-align: center;
     padding: 6% 4%;
-    color: #607274;
+    color: #fada5e;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -346,8 +361,27 @@ body {
 }
 
 div.cd-box {
-    width: 100px;
-    height: 100px;
+    padding: 10%;
+}
+
+.signup-btn {
+    border: 0;
+    border-radius: 100px;
+    cursor: pointer;
+    min-height: 40px;
+    padding: 1% 5%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fada5e;
+    border: none;
+    font-size: 1.5rem;
+    color: #122013;
+    font-weight: bold;
+    margin: 5% 42% 0 42%;
+}
+
+.signup-btn:hover {
+    background-color: #b2ac88;
 }
 
 /*--------------------TABLET-----------------------*/
@@ -467,34 +501,25 @@ div.cd-box {
     }
 
     .countdown-section {
-        align-items: center;
-        padding: 5% 35%;
+        padding: 8% 10%;
+    }
+
+    .countdown-section h1 {
+        margin-bottom: 3%;
+    }
+
+    .countdown-section p {
+        font-size: 1.2rem;
     }
 
     .countdown {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        margin: 5% 30% 7% 30%;
     }
 
-    .cd-box {
-        background-color: #fada5e;
-        -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-        -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-        box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-        align-items: center;
-        text-align: center;
-        padding: 6% 4%;
-        color: #607274;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    div.cd-box {
-        width: 100px;
-        height: 100px;
+    .signup-btn {
+        padding: 1% 5%;
+        font-size: 1rem;
+        margin: 0 40%;
     }
 }
 
@@ -698,33 +723,26 @@ div.cd-box {
     }
 
     .countdown-section {
-        align-items: center;
-        padding: 5% 35%;
+        padding: 10% 8%;
+    }
+
+    .countdown-section h1 {
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+
+    .countdown-section p {
+        font-size: 1.2rem;
     }
 
     .countdown {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: grid;
+        margin: 10% 7%;
     }
 
-    .cd-box {
-        background-color: #fada5e;
-        -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-        -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-        box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
-        align-items: center;
-        text-align: center;
-        padding: 6% 4%;
-        color: #607274;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    div.cd-box {
-        width: 100px;
-        height: 100px;
+    .signup-btn {
+        padding: 2% 10%;
+        font-size: 1.2rem;
+        margin: 0 25%;
     }
 }
