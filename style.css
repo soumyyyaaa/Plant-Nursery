@@ -499,7 +499,7 @@ div.cd-box {
 }
 
 /*--------------------PHONE-----------------------*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .hero-section {
         background-image: url("phone-hero.png");
         height: auto;
